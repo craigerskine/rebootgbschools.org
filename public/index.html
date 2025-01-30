@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en" class="bg-transparent antialiased" x-data="{
+  nameFirst: 'Elliot',
+  nameLast: 'Christenson',
+  election: [
+    { title: 'Primary', date: 'February 18, 2025' },
+    { title: 'General', date: 'April 1, 2025' },
+  ],
+  policies: [
+    {
+      summary: 'Direct Educational Impact',
+      details: 'School boards make critical decisions about curriculum, funding, and policies that directly shape the quality of education in your community.'
+    },
+    {
+      summary: 'Resource Allocation',
+      details: 'Your vote helps determine how school resources and budgets are prioritized, ensuring investments are made in areas crucial to student success.'
+    },
+    {
+      summary: 'Long-Term Community Influence',
+      details: 'The policies and decisions made by school boards have lasting effects on your community\'s educational landscape and future generations.'
+    },
+    {
+      summary: 'Community Quality of Life',
+      details: 'Strong schools are fundamental to a thriving community, and voting in school board elections contributes to overall community well-being.'
+    },
+    {
+      summary: 'Student Advocacy',
+      details: 'Voting allows you to be a voice for students, helping create supportive and effective learning environments.'
+    },
+  ],
+}">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Elliot Christenson for School Board</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, interactive-widget=overlays-content" />
+
+    <meta name="description" content="Elliot Christenson for School Board" />
+    <meta property="og:title" content="Elliot Christenson for School Board" />
+    <meta property="og:description" content="Elliot Christenson for School Board" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image" content="_assets/img/og.jpg" />
+    <link href="/favicon.ico" rel="icon" type="image/x-icon" sizes="16x16" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+
+    <style data-twind></style>
+  </head>
+
+  <body class="bg-white text-gray-900 !block" style="display: none;">
+    <div id="app" class="min-h-screen flex-(& col)">
+      <header class="p-8 bg-zinc-900 text-(brand-100 center) relative lg:(w-1/2 text-start flex-(& col) items-center justify-center fixed inset-y-0 left-0)" style="background-image: url('_assets/img/bg-chalk.png');">
+        <div class="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent z-[-1]" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" class="absolute inset-0 opacity-30">
+            <defs>
+              <filter id="a" x="-100%" y="-100%" width="400%" height="400%" filterUnits="objectBoundingBox" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="40" x="0%" y="0%" in="SourceGraphic" result="blur" /></filter>
+            </defs>
+            <g filter="url(#a)">
+              <ellipse rx="150" ry="150" cx="602.707" cy="239.774" fill="rgba(255, 255, 255, 0.5)" />
+              <ellipse rx="150" ry="150" cx="335.041" cy="525.167" fill="rgba(248, 230, 27, 0.3)" />
+            </g>
+          </svg>
+        </div>
+        <div class="lg:(animate-float)">
+          <picture class="mx-auto p-1 w-24 h-24 block relative lg:(w-48 h-48) after:(ring-(& brand-500) absolute inset-0 rounded-full animate-ping)">
+            <img src="_assets/img/elliot.jpg" alt="Elliot" class="mx-auto bg-black/30 object-(left cover) rounded-full" />
+            <span class="border-(4 dashed brand-300/50) absolute inset-0 rounded-full animate-spin [animation-duration:25s]" aria-hidden="true"></span>
+          </picture>
+          <div class="space-y-4 -rotate-3 lg:(-rotate-6)">
+            <hgroup class="space-y-2">
+              <p class="text-(brand-500 3xl) font-script lg:(text-4xl)">Vote for</p>
+              <h1 class="text-(brand-300 4xl) font-black [&>strong]:(text-white) lg:(text-[calc(2em+2vw)] tracking-tight) lg:(text-5xl)"><strong x-text="nameFirst"></strong> <span x-text="nameLast"></span></h1>
+            </hgroup>
+            <h2 class="text-(brand-200/70 xl) lg:(text-end)"><em>School Board - 2025</em></h2>
+          </div>
+        </div>
+        <div class="py-8 px-4 text-(brand-400 3xl) flex items-center justify-center gap-6 [&_a]:(w-12 h-12 flex items-center justify-center rounded-full transition hover:(bg-brand-500/20 text-white scale-150)) lg:(absolute bottom-0 inset-x-0)">
+          <a href="#" x-tooltip="'Donate with Venmo'"><iconify-icon icon="mdi:venmo"></iconify-icon></a>
+          <a href="#" x-tooltip="'Donate with Cash App'"><iconify-icon icon="simple-icons:cashapp"></iconify-icon></a>
+        </div>
+      </header>
+      <main class="flex-1 lg:(ml-auto w-1/2)">
+        <div class="grid-(& cols-2)">
+          <picture><img src="_assets/img/gallery-packers.jpg" alt="Packers" /></picture>
+          <picture><img src="_assets/img/gallery-girl.jpg" alt="Niece" /></picture>
+          <picture><img src="_assets/img/gallery-boy.jpg" alt="Nephew" /></picture>
+          <picture><img src="_assets/img/gallery-family.jpg" alt="Family" /></picture>
+        </div>
+        <article class="prose prose-headings:(text-brand-500 text-4xl font-script) mx-auto py-16 px-4 max-w-2xl text-[inherit]">
+          <h3>Elliot for School Board 2025</h3>
+          <p>Are you ready to make a meaningful difference in our local education system? <strong x-text="nameFirst +' '+ nameLast"></strong> is running for school board with a passionate commitment to:</p>
+          <ul>
+            <li>Enhancing educational quality</li>
+            <li>Supporting teachers and staff</li>
+            <li>Prioritizing student success and well-being</li>
+          </ul>
+
+          <!--
+            <div class="mt-12 border-(2 dashed) rounded-2xl">
+              <div x-data="{
+                audio: null,
+                playing: false,
+                elapsed: 0,
+                total: null,
+                timer: null,
+                setMetadata() {
+                  this.total = Math.floor(this.audio.duration);
+                },
+                formatTime(seconds) {
+                  const minutes = Math.floor(seconds / 60);
+                  const remainingSeconds = seconds % 60;
+                  return `${minutes.toString().padStart(2, '0')}:${remainingSeconds.toString().padStart(2, '0')}`;
+                },
+                startPlaying() {
+                  if (!this.playing) {
+                    this.playing = true;
+                    this.audio.play();
+                    this.timer = setInterval(() => {
+                      this.elapsed = Math.floor(this.audio.currentTime);
+                      if (this.elapsed >= this.audio.duration) {
+                        this.stopPlaying();
+                        this.audio.currentTime = 0;
+                      }
+                    }, 1000);
+                  } else {
+                    this.stopPlaying();
+                  }
+                },
+                stopPlaying() {
+                  this.playing = false;
+                  this.audio.pause();
+                  clearInterval(this.timer);
+                },
+                updatePlaying(event) {
+                  const slider = event.target;
+                  const rect = slider.getBoundingClientRect();
+                  const percentage = (event.clientX - rect.left) / rect.width;
+                  this.elapsed = Math.round(percentage * (slider.max - slider.min) + slider.min);
+                  this.audio.currentTime = this.elapsed;
+                },
+                init() {
+                  this.audio = this.$refs.audio;
+                  if (this.audio.readyState > 0) {
+                    this.setMetadata();
+                  } else {
+                    this.audio.addEventListener('loadedmetadata', () => {
+                      this.setMetadata();
+                    });
+                  }
+                  this.audio.addEventListener('ended', () => {
+                    this.elapsed = 0;
+                    this.playing = false;
+                    this.audio.currentTime = 0;
+                  });
+                },
+              }" class="p-4 flex items-end gap-4">
+                <button @click="startPlaying()" class="w-12 h-12 bg-gray-700 text-gray-200 flex items-center justify-center shrink-0 rounded-full">
+                  <iconify-icon :icon="playing ? 'mdi:pause' : 'mdi:play'" width="32px" height="32px" class="iconify"></iconify-icon>
+                </button>
+                <div class="flex-(& col 1) gap-2">
+                  <strong class="text-sm">My message to you!</strong>
+                  <input
+                    x-model="elapsed"
+                    @click="updatePlaying($event)"
+                    @input="audio.currentTime = elapsed"
+                    :max="total"
+                    :value="elapsed"
+                    type="range"
+                    min="0"
+                    class="
+                      [--range-shdw:currentColor]
+                      [--filler-size:100rem]
+                      [--filler-offset:.4rem]
+                      appearance-none
+                      my-0.5
+                      w-full
+                      h-4
+                      bg-transparent
+                      block
+                      overflow-hidden
+                      cursor-pointer
+                      rounded-full
+                      [&::-webkit-slider-runnable-track]:(appearance-none w-full h-4 bg-gray-500/20 items-center rounded-full)
+                      [&::-moz-range-track]:(appearance-none w-full h-4 bg-gray-500/20 items-center rounded-full)
+                      [&::-webkit-slider-thumb]:(appearance-none border-none w-4 h-4 bg-white [color:var(--range-shdw)] relative top-1/2 [transform:translateY(-50%)] rounded-full [box-shadow:0_0_0_3px_var(--range-shdw)_inset,var(--focus-shadow,_0_0),calc(var(--filler-size)_*_-1_-_var(--filler-offset))_0_0_var(--filler-size)])
+                      [&::-moz-range-thumb]:(appearance-none border-none w-4 h-4 bg-white [color:var(--range-shdw)] relative top-1/2 rounded-full [box-shadow:0_0_0_3px_var(--range-shdw)_inset,var(--focus-shadow,_0_0),calc(var(--filler-size)_*_-1_-_var(--filler-offset))_0_0_var(--filler-size)])
+                  "/>
+                </div>
+                <div class="text-xs leading-5 [font-variant-numeric:tabular-nums] shrink-0"><span x-text="formatTime(elapsed)"></span> <span class="text-gray-400">/</span> <span x-text="formatTime(total)"></span></div>
+              </div>
+              <audio x-ref="audio"><source src="_assets/audio/message.mp3" type="audio/mpeg" /></audio>
+            </div>
+          -->
+
+          <hr class="invisible" />
+          <h3>Your vote matters</h3>
+          <p>School board members shape the educational landscape for our community's children. By voting for <strong x-text="nameFirst"></strong>, you're choosing:</p>
+          <div class="not-prose divide-(y-2 dashed brand-300)" style="--marker-size: 1rem; --marker-gap: 0.5rem;">
+            <template x-for="item in policies" hidden>
+              <details name="breakdown" class="[&[open]_summary:before]:(content-['-'])">
+                <summary
+                  class="py-3 font-semibold flex items-start cursor-pointer select-none gap-[var(--marker-gap)] before:(my-1 w-[var(--marker-size)] h-[var(--marker-size)] font-mono leading-none flex items-center justify-center shrink-0 content-['+'])"
+                  x-text="item.summary"
+                ></summary>
+                <div
+                  class="ml-[var(--marker-gap)] pl-[var(--marker-size)] pb-4"
+                  x-text="item.details"
+                ></div>
+              </details>
+            </template>
+          </div>
+          <hr class="invisible" />
+          <h3>Take action</h3>
+          <p>Your vote is your voice. Join us in building a stronger, more responsive school district that prepares our students for future success.</p>
+          <p class="p-4 border-(y-2 dashed brand-300) bg-(brand-100 gradient-to-r) from-white via-transparent to-white text-(brand-800 xl) font-black flex-(& col) items-center gap-3">
+            <template x-for="item in election" hidden>
+              <span><span x-text="item.title +':'"></span> <span class="font-semibold" x-text="item.date"></span></span>
+            </template>
+          </p>
+          <p class="text-(brand-700 center)"><em>Together, we can create positive change, one ballot at a time.</em></p>
+        </article>
+      </main>
+      <footer class="py-8 flex-none [&_a]:(text-brand-500 relative after:(w-0 h-px bg-current absolute -bottom-px left-0 content-[''] transition-all) hover:(after:(w-full))) lg:(ml-auto w-1/2)">
+        <div class="mx-auto px-4 max-w-2xl text-(gray-600 end) font-semibold uppercase">
+          <p class="text-xs">Website by <a href="https://craigerskine.com/">Craig Erskine</a></p>
+        </div>
+      </footer>
+    </div>
+    <script type="module">
+
+      // icons
+      import 'https://esm.run/iconify-icon';
+
+      // twind
+      import { install, injectGlobal } from 'https://esm.run/@twind/core';
+      import presetAutoprefix from 'https://esm.run/@twind/preset-autoprefix';
+      import presetTailwind from 'https://esm.run/@twind/preset-tailwind';
+      import presetTypography from 'https://esm.run/@twind/preset-typography';
+      install({
+        presets: [presetAutoprefix(), presetTailwind(), presetTypography()],
+        darkMode: 'class',
+        hash: false,
+        theme: {
+          extend: {
+            colors: ({ theme }) => ({
+              brand: theme('colors.emerald'),
+            }),
+            fontFamily: ({ theme }) => ({
+              sans: ['Inter', ...theme('fontFamily.sans')],
+              script: ['Caveat', ...theme('fontFamily.sans')],
+            }),
+            keyframes: {
+              'float': {
+                '0%': { transform: 'translate(0, 0)' },
+                '100%': { transform: 'translate(0, 1rem)' },
+              },
+            },
+            animation: {
+              'float': 'float 2.5s ease-in-out alternate infinite',
+            },
+          },
+        },
+        rules: [
+          ['text-wrap-(unset|wrap|nowrap|balance|pretty)', 'textWrap'],
+        ],
+      });
+      // global css
+      injectGlobal`
+        @layer base {
+          :focus-visible { @apply outline-offset-2 transition-[outline]; }
+          hr { @apply border-(t-2 dashed gray-300); }
+          [data-tippy-root] { @apply max-w-[calc(100vw-10px)]; }
+          .tippy-box[data-state="hidden"] { @apply opacity-0 translate-y-1; }
+          .tippy-box { @apply bg-black text-white whitespace-normal outline-none relative opacity-100 shadow-md rounded translate-y-0 motion-safe:(transition); }
+          .tippy-content { @apply py-2 px-4 text-xs relative z-[1]; }
+        }
+      `
+
+      // alpine
+      import Alpine from 'https://esm.run/alpinejs';
+      import tippy from 'https://esm.run/tippy.js';
+      document.addEventListener('alpine:init', () => {
+        Alpine.data('app', () => ({
+        }));
+        // x-tooltip="'some tooltip'"
+        Alpine.directive('tooltip', (el, { expression }, { evaluate }) => {
+          tippy(el, { content: evaluate(expression) })
+        });
+      });
+      window.Alpine = Alpine;
+      Alpine.start();
+
+    </script>
+  </body>
+
+</html>
