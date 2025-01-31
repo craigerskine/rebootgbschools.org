@@ -70,7 +70,7 @@
 
 <!-- donate -->
           <template x-for="item in donate" hidden>
-            <li><a @click.prevent :href="item.url" x-tooltip="'Donate with '+ item.title" :aria-label="'Donate with '+ item.title"><iconify-icon :icon="item.icon"></iconify-icon></a></li>
+            <li><a :href="item.url" x-tooltip="'Donate with '+ item.title" :aria-label="'Donate with '+ item.title"><iconify-icon :icon="item.icon"></iconify-icon></a></li>
           </template>
 
         </ul>
@@ -321,9 +321,9 @@
             },
           ],
           donate: [
-            { title: 'PayPal', icon: 'mdi:paypal', url: '#' },
-            { title: 'Venmo', icon: 'mdi:venmo', url: '#' },
-            { title: 'CashApp', icon: 'simple-icons:cashapp', url: '#' },
+            // { title: 'PayPal', icon: 'mdi:paypal', url: '#' },
+            { title: 'Venmo', icon: 'mdi:venmo', url: 'https://account.venmo.com/u/ideasbyelliot' },
+            { title: 'CashApp', icon: 'simple-icons:cashapp', url: 'https://cash.app/$ideasbyelliot' },
           ],
 /*
   === *** /CONTENT *** ===
