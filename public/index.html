@@ -279,6 +279,11 @@
           [data-tippy-root] { @apply max-w-[calc(100vw-10px)]; }
           .tippy-box[data-state="hidden"] { @apply opacity-0 translate-y-1; }
           .tippy-box { @apply bg-black text-white whitespace-normal outline-none relative opacity-100 shadow-md rounded translate-y-0 motion-safe:(transition); }
+          .tippy-box[data-placement^="top"] > .tippy-arrow { @apply bottom-0 before:(bottom-[-7px] left-0 border-(t-[8px] r-[8px] b-0 l-[8px]) [border-top-color:currentColor]) -translate-x-1/2 left-1/2 origin-top; }
+          .tippy-box[data-placement^="bottom"] > .tippy-arrow { @apply top-0 before:(top-[-7px] left-0 border-(t-0 r-[8px] b-[8px] l-[8px]) [border-bottom-color:currentColor]) -translate-x-1/2 left-1/2 origin-bottom; }
+          .tippy-box[data-placement^="left"] > .tippy-arrow {@apply right-0 before:(right-[-7px] border-(t-[8px] r-0 b-[8px] l-[8px]) [border-left-color:currentColor]) -translate-y-1/2 top-1/2 origin-left; }
+          .tippy-box[data-placement^="right"] > .tippy-arrow { @apply left-0 before:(left-[-7px] border-(t-[8px] r-[8px] b-[8px] l-0) [border-right-color:currentColor]) -translate-y-1/2 top-1/2 origin-right; }
+          .tippy-arrow { @apply w-4 h-4 text-black absolute before:(content-[''] absolute border-(transparent solid)); }
           .tippy-content { @apply py-2 px-4 text-xs relative z-[1]; }
         }
       `
