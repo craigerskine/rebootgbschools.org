@@ -198,7 +198,7 @@
           <p>School board members shape the educational landscape for our community's children. By voting for <strong x-text="nameFirst"></strong>, you're choosing:</p>
           <div class="not-prose divide-(y-2 dashed brand-300)" style="--marker-size: 1rem; --marker-gap: 0.5rem;">
             <template x-for="item in policies" hidden>
-              <details name="breakdown" class="[&[open]_summary:before]:(content-['-'])">
+              <details class="[interpolate-size:allow-keywords] [&::details-content]:([block-size:0] overflow-hidden motion-safe:(transition-all [transition-behavior:allow-discrete])) [&[open]::details-content]:([block-size:auto]) [&[open]_summary:before]:(content-['-'])">
                 <summary
                   class="py-3 font-semibold flex items-start cursor-pointer select-none gap-[var(--marker-gap)] before:(my-1 w-[var(--marker-size)] h-[var(--marker-size)] font-mono leading-none flex items-center justify-center shrink-0 content-['+'])"
                   x-text="item.summary"
@@ -213,16 +213,18 @@
           <hr class="invisible" />
           <h3>Take action</h3>
           <p>Your vote is your voice. Join us in building a stronger, more responsive school district that prepares our students for future success.</p>
-          <p class="p-4 border-(y-2 dashed brand-300) bg-(brand-100 gradient-to-r) from-white via-transparent to-white text-(brand-800 xl) font-black flex-(& col) items-center gap-3">
-            <template x-for="item in election" hidden>
-              <span class="flex items-center gap-2">
-                <iconify-icon icon="mdi:check-box-outline" width="24px" height="24px" class="text-brand-600/75 shrink-0"></iconify-icon>
-                <span>
-                  <span x-text="item.title +':'"></span>
-                  <span class="font-semibold" x-text="item.date"></span>
+          <p class="p-4 border-(y-2 dashed brand-300) bg-(brand-100 gradient-to-r) from-white via-transparent to-white text-(brand-800 xl) font-black flex-(& col) items-center">
+            <span class="flex-(& col) gap-3">
+              <template x-for="item in election" hidden>
+                <span class="flex items-center gap-2">
+                  <iconify-icon icon="mdi:check-box-outline" width="24px" height="24px" class="text-brand-600/75 shrink-0"></iconify-icon>
+                  <span>
+                    <span x-text="item.title +':'"></span>
+                    <span class="font-semibold" x-text="item.date"></span>
+                  </span>
                 </span>
-              </span>
-            </template>
+              </template>
+            </span>
           </p>
           <p class="text-(brand-700 center)"><em x-text="slogan"></em></p>
         </article>
