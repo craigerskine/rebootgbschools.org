@@ -1,4 +1,4 @@
-# [rebootgbschools]([https://rebootgbschools.org/](https://craigerskine.github.io/rebootgbschools.org/))
+# [rebootgbschools](https://craigerskine.github.io/rebootgbschools.org/)
 
 school board design
 
